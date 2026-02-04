@@ -18,3 +18,19 @@ if(n > 10){
     console.log("n é menor q 10")
 }
 
+x = -2
+
+if(x === 0){
+    console.log("x é nulo")
+} else if(x > 0) {
+    console.log("x é positivo")
+} else {
+    console.log("x é negativo")
+}
+
+y = 7
+w = 9
+
+soma = y + w
+
+console.log(`A soma de ${y} e ${w} é ${soma}`)
