@@ -65,6 +65,22 @@ console.log(mario)
 console.log(mario.age)
 
 mario.address.number = 10 // altrar o objeto
-mario.name = "Hulk" // altrar o objeto
+mario.name = "Hulk" // alterar o objeto
 
 console.log(mario)
+
+/*
+5. Null & Undefined
+
+ */
+
+const user = {
+    nome:"Mario",
+    idade: 43,
+    nomeDoConjuge: "Thalita",
+    id: null
+}
+
+console.log(user)
+
+console.log(user.abacate) // Undefined -> Não existe
