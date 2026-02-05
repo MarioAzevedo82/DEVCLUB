@@ -39,3 +39,32 @@ var b = 444/9876
 var c = a < b
 
 console.log(c)
+
+/*
+4. Object -> Objetos
+
+*/
+
+const name = "Mario"
+const age = 43
+const address = "Rua Sem Nome, número Zero"
+
+const mario = {
+    name: "Mario",
+    age: 43,
+    address: {
+        street: "Rua Sem Nome",
+        number: 0,
+        city: "São Nunca",
+        state:"SC",
+        country: "Brasil"
+    }
+}
+
+console.log(mario)
+console.log(mario.age)
+
+mario.address.number = 10 // altrar o objeto
+mario.name = "Hulk" // altrar o objeto
+
+console.log(mario)
