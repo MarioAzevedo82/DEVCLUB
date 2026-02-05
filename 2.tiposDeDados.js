@@ -13,7 +13,7 @@ console.log(texto3)
 
 const myAge = 43
 const wifeAge = 39
-const myString = `Minha idade é ${myAge} e da minha esposa é ${wifeAge}` 
+const myString = `Minha idade é ${myAge} e da minha esposa é ${wifeAge}`
 
 console.log(myString)
 
@@ -34,8 +34,8 @@ true or false
 
 */
 
-var a = 34/983
-var b = 444/9876
+var a = 34 / 983
+var b = 444 / 9876
 var c = a < b
 
 console.log(c)
@@ -56,7 +56,7 @@ const mario = {
         street: "Rua Sem Nome",
         number: 0,
         city: "São Nunca",
-        state:"SC",
+        state: "SC",
         country: "Brasil"
     }
 }
@@ -75,7 +75,7 @@ console.log(mario)
  */
 
 const user = {
-    nome:"Mario",
+    nome: "Mario",
     idade: 43,
     nomeDoConjuge: "Thalita",
     id: null
@@ -84,3 +84,32 @@ const user = {
 console.log(user)
 
 console.log(user.abacate) // Undefined -> Não existe
+
+/*
+6. Array -> Vetor, Matriz
+
+*/
+
+const users = [
+    {
+        nome: "Hulk",
+        idade: 7,
+        nomeDoConjuge: "Lila",
+        id: null
+    },
+    {
+        nome: "Paulo",
+        idade: 30,
+        nomeDoConjuge: "Paula",
+        id: null
+    }
+]
+
+console.log(users)
+
+const myArray = [20, 30, "Olá, JS", { name: "Mario", age: 43 }]
+
+console.log(myArray[0])
+console.log(myArray[1])
+console.log(myArray[2])
+console.log(myArray[3])
