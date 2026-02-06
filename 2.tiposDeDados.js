@@ -113,3 +113,39 @@ console.log(myArray[0])
 console.log(myArray[1])
 console.log(myArray[2])
 console.log(myArray[3])
+
+/*
+7. If & Else
+
+Controlador de Fluxo
+
+-IF(se) -> Faça isso
+-Else(Se não) -> Execute o ELSE
+
+Operadores de comparação
+
+> maior que
+< menor que
+== igual que
+
+*/
+
+const notaDoAluno = 4
+const notaDeCorte = 5
+
+if(notaDoAluno > notaDeCorte) {
+    // O QUE SERÁ EXECUTADO, SE O IF FOR VERDADEIRO
+    console.log("Párabens, você passou de ano!")
+} else {
+    // SE O IF FOR FALSO, ELE ENTRA AQUI
+    console.log("Você foi reprovado.")
+}
+
+const senhaDoUsuario = 123456
+const senhaDigitada = 123457
+
+if(senhaDigitada == senhaDoUsuario){
+    console.log("Seja bem-vindo, você está logado(a)!")
+} else {
+    console.log("Senha incorreta!")
+}
