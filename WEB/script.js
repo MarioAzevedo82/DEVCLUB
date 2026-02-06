@@ -9,3 +9,6 @@ console.log(elements)
 
 const elements1 = document.getElementsByTagName("p")
 console.log(elements1)
+
+const elements2 = document.getElementsByName("nome-completo")
+console.log(elements2)
