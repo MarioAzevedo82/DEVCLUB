@@ -10,8 +10,8 @@ querySelector -> Trás UM elemento, o PRIMEIRO que encontrar
 querySelectorAll -> Trás TODOS os elementos que encontrar
 */
 
-const input = document.getElementById("main-input")
-console.log(input)
+// const input = document.getElementById("main-input")
+// console.log(input)
 
 const elements = document.getElementsByClassName("paragraph-js")
 console.log(elements)
@@ -44,3 +44,21 @@ console.log(elemento.textContent) // SÓ HTML
 console.log(elemento.innerText) // LEVA EM CONTA O CSS
 console.log(elemento.innerHTML) // TRÁS TUDO
 
+const button = document.querySelector(".main-button");
+
+button.style.color = "white"
+button.style.backgroundColor = "red"
+
+/*
+Eventos
+
+*/
+const input = document.querySelector("#main-input")
+
+function cliqueiNoBotao() {
+    alert("Botão clicado com sucesso!")
+}
+
+function digiteiNoInput() {
+    console.log(input.value)
+}
