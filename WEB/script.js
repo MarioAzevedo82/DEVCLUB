@@ -38,6 +38,8 @@ innnerHTML -> Permite adicionar HTML e texto
 
 const elemento = document.querySelector(".paragraph-js");
 
+
+elemento.textContent = "O novo texto é esse!"
 console.log(elemento.textContent) // SÓ HTML
 console.log(elemento.innerText) // LEVA EM CONTA O CSS
 console.log(elemento.innerHTML) // TRÁS TUDO
