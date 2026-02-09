@@ -27,3 +27,18 @@ console.log(elements3)
 const elements4 = document.querySelector(".paragraph-js")
 console.log(elements4)
 
+/*
+Alterando e Acessando textos
+
+textContent -> Pega todo o conteúdo
+innerText -> Pega APENAS o texto
+innnerHTML -> Permite adicionar HTML e texto
+
+*/
+
+const elemento = document.querySelector(".paragraph-js");
+
+console.log(elemento.textContent) // SÓ HTML
+console.log(elemento.innerText) // LEVA EM CONTA O CSS
+console.log(elemento.innerHTML) // TRÁS TUDO
+
