@@ -53,12 +53,26 @@ button.style.backgroundColor = "red"
 Eventos
 
 */
-const input = document.querySelector("#main-input")
+//const input = document.querySelector("#main-input")
 
-function cliqueiNoBotao() {
-    alert("Botão clicado com sucesso!")
+// function cliqueiNoBotao() {
+//     alert("Botão clicado com sucesso!")
+// }
+
+// function digiteiNoInput() {
+//     console.log(input.value)
+// }
+
+//Exercício - Faça o campo do input substituir o parágrafo.
+
+const input = document.getElementById("main-input")
+const paragrafo = document.querySelector(".paragraph-js")
+
+function digiteiNoInput(){
+    
 }
 
-function digiteiNoInput() {
-    console.log(input.value)
+function cliqueiNoBotao() {
+    paragrafo.innerHTML = input.value
+
 }
