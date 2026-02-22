@@ -13,8 +13,13 @@ function convertValues() {
         style: "currency",
         currency: "BRL"
     }).format(inputCurrencyValue)
-    currencyValueConverted.innerHTML = convertedValue
 
+    currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD"
+    }).format(convertedValue)
+
+    
     console.log(convertValue)
 }
 
