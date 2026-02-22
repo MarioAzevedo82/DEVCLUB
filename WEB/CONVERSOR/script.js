@@ -1,7 +1,13 @@
 const convertButton = document.querySelector(".convert-button")
 
 function convertValues() {
-    console.log("funcionou!")
+    const inputCurrencyValue = document.querySelector(".input-currency").value
+
+    const dolarToday = 5.2
+
+    const convertValue = inputCurrencyValue / dolarToday
+
+    console.log(convertValue)
 }
 
 
