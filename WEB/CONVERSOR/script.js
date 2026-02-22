@@ -9,7 +9,10 @@ function convertValues() {
 
     const convertedValue = inputCurrencyValue / dolarToday
 
-    currencyValueToConvert.innerHTML = inputCurrencyValue
+    currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
+        style: "currency",
+        currency: "BRL"
+    }).format(inputCurrencyValue)
     currencyValueConverted.innerHTML = convertedValue
 
     console.log(convertValue)
