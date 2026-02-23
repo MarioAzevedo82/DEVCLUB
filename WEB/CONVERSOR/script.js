@@ -33,14 +33,18 @@ function convertValues() {
 
 function changeCurrency() {
     const currencyName = document.getElementById("currency-name")
+    const currencyImage = document.querySelector("#flag")
 
     if(currencySelect.value == "dolar"){
         currencyName.innerHTML = "Dólar"
+        currencyImage.src = "./assets/dolar2.png"
     }
     if(currencySelect.value == "euro"){
         currencyName.innerHTML = "Euro"
+        currencyImage.src = "./assets/euro2.png"
     }
 
+    convertValues()
 }
 
 currencySelect.addEventListener("change", changeCurrency)
