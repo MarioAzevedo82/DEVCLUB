@@ -36,3 +36,15 @@ input, button {
     border: none;
     border-radius: 5px;
 }
+
+button {
+    cursor: pointer;
+    background-color: #6f00ff;
+    color: white;
+}
+
+@media (max-width: 500px) {
+    body, input, button {
+        font-size: 15px;
+    }
+}
