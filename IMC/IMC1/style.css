@@ -42,3 +42,32 @@ input {
     border: 1px solid #ccc;
     outline: none;
 }
+
+input:focus {
+    border-color: #2c5364;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(135deg, #0f2027, #2c5364);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
