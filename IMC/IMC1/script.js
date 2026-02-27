@@ -7,17 +7,26 @@ function calcular() {
         resultado.innerHTML = "Preencha todos os campos"
         return
     }
-    
+
     const imc = (peso / (altura * altura)).toFixed(2)
     let resposta = ''
 
-    if (imc < 20) {
-        resposta = "abaixo do peso"
-    } else if (imc < 27) {
-        resposta = "peso normal"
+    if (imc < 18,5) {
+        resposta = "Abaixo do peso"
+        cor = "#3498db"
+    } else if (imc < 25) {
+        resposta = "Peso normal"
+    } else if(imc < 30){
+        resposta = "Sobrepeso"
+    } else if(imc < 35){
+        resposta = "Obesidade grau I"
+    } else if(imc < 40){
+        resposta = "Obesidade grau II"
     } else {
-        resposta = "gordo"
+        resposta = "Obesidade grau III"
     }
 
     resultado.innerHTML = `IMC ${imc} - ${resposta}`
+    resultado.style.background = cor
+    resultado.style.color = "fff"
 }
